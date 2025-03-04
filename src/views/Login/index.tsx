@@ -1,18 +1,17 @@
 import { defineComponent, onMounted, ref, onBeforeMount } from "vue";
 import { scaleContainer } from "@/utils/utils";
-import { ElInput, ElButton } from 'element-plus';
+import { ElInput, ElButton } from "element-plus";
 import { useRouter } from "vue-router";
 
 import "./style.less";
 
 export default defineComponent(() => {
-
-  const password = ref('');
+  const password = ref("");
   const router = useRouter();
 
   onBeforeMount(() => {
-    router.push({ path: '/Home' });
-  })
+    router.push({ path: "/Home" });
+  });
 
   onMounted(() => {
     scaleContainer(".container");
@@ -36,14 +35,16 @@ export default defineComponent(() => {
             <ElButton
               type="primary"
               onClick={() => {
-                if (password.value === '132511') {
-                  localStorage.setItem('test_password', '132511')
-                  router.push({ path: 'Home' });
+                if (password.value === "132511") {
+                  localStorage.setItem("test_password", "132511");
+                  router.push({ path: "Home" });
                 } else {
-                  alert('密码错误')
+                  alert("密码错误");
                 }
               }}
-            >登录</ElButton>
+            >
+              登录
+            </ElButton>
           </div>
         </div>
       </div>

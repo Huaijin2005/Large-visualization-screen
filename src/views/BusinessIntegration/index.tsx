@@ -1,9 +1,4 @@
-import {
-  defineComponent,
-  reactive,
-  onMounted,
-  watchEffect,
-} from "vue";
+import { defineComponent, reactive, onMounted, watchEffect } from "vue";
 import Skeleton from "@/components/Skeleton";
 import Card from "@/components/Card";
 import Map from "./Map";
@@ -94,7 +89,7 @@ export default defineComponent(() => {
        * sync: 同步触发，低效
        */
       flush: "post",
-    }
+    },
   );
 
   const onChangeData = () => {
@@ -358,7 +353,7 @@ export default defineComponent(() => {
                             energyProportion(
                               `.ep-item_${index}`,
                               item.value,
-                              item.color
+                              item.color,
                             );
                           }, 0)}
                         </div>
@@ -367,7 +362,7 @@ export default defineComponent(() => {
                           style={{ color: item.color }}
                         >
                           {parseFloat(
-                            ((item.value / 100) * 100).toFixed(2).toString()
+                            ((item.value / 100) * 100).toFixed(2).toString(),
                           )}
 
                           <p>%</p>

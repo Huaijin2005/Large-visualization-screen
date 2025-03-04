@@ -1,7 +1,9 @@
-import * as echarts from 'echarts';
+import * as echarts from "echarts";
 
 export function totalEnergy() {
-  const chart = echarts.init(document.querySelector('.chart-total-energy') as HTMLElement);
+  const chart = echarts.init(
+    document.querySelector(".chart-total-energy") as HTMLElement,
+  );
   chart.setOption({
     legend: {
       show: true,
@@ -13,33 +15,26 @@ export function totalEnergy() {
       itemGap: 30,
       textStyle: {
         color: "#D8DBDF",
-        fontSize: 22
+        fontSize: 22,
       },
       data: [
         "电力生产",
         "原油加工及石油制品制造",
         "石油开采",
         "热力生产和供应",
-        "其他"
+        "其他",
       ],
     },
     grid: {
       left: 0,
       right: 0,
-      bottom: '3%',
-      containLabel: true
+      bottom: "3%",
+      containLabel: true,
     },
     xAxis: {
-      type: 'category',
+      type: "category",
       boundaryGap: false,
-      data: [
-        "2023-09",
-        "2023-10",
-        "2023-11",
-        "2023-12",
-        "2024-01",
-        "2024-02"
-      ],
+      data: ["2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02"],
       axisLine: {
         show: true,
         lineStyle: {
@@ -48,84 +43,89 @@ export function totalEnergy() {
       },
       axisLabel: {
         fontSize: 18,
-        color: '#D8DBDF'
-      }
+        color: "#D8DBDF",
+      },
     },
     yAxis: {
-      type: 'value',
+      type: "value",
       splitLine: {
         lineStyle: {
-          color: '#384267',
+          color: "#384267",
           width: 1,
-          type: 'dashed',
+          type: "dashed",
         },
         show: true,
       },
       axisLabel: {
         fontSize: 18,
-        color: '#D8DBDF'
-      }
+        color: "#D8DBDF",
+      },
     },
     series: [
       {
-        name: '电力生产',
-        type: 'line',
+        name: "电力生产",
+        type: "line",
         data: [100, 212, 300, 500, 400, 100, 100],
         smooth: true,
         showSymbol: false,
         lineStyle: {
-          width: 4
-        }
+          width: 4,
+        },
       },
       {
-        name: '原油加工及石油制品制造',
-        type: 'line',
+        name: "原油加工及石油制品制造",
+        type: "line",
         data: [100, 200, 400, 300, 600, 400, 500],
         smooth: true,
         showSymbol: false,
         lineStyle: {
-          width: 4
-        }
+          width: 4,
+        },
       },
       {
-        name: '石油开采',
-        type: 'line',
+        name: "石油开采",
+        type: "line",
         data: [211, 112, 333, 400, 510, 211, 100],
         smooth: true,
         showSymbol: false,
         lineStyle: {
-          width: 4
-        }
+          width: 4,
+        },
       },
       {
-        name: '热力生产和供应',
-        type: 'line',
+        name: "热力生产和供应",
+        type: "line",
         data: [400, 300, 700, 500, 400, 200, 300],
         smooth: true,
         showSymbol: false,
         lineStyle: {
-          width: 4
-        }
+          width: 4,
+        },
       },
       {
-        name: '其他',
-        type: 'line',
+        name: "其他",
+        type: "line",
         data: [300, 200, 600, 300, 500, 100, 200],
         smooth: true,
         showSymbol: false,
         lineStyle: {
-          width: 4
-        }
-      }
-    ]
-  
+          width: 4,
+        },
+      },
+    ],
   });
-};
+}
 
 export function industrialValueAdded() {
-  const chart = echarts.init(document.querySelector('.chart-industrial-value-added') as HTMLElement);
-  const military_statistics_data1 = [220, 100, 250, 145, 240, 130, 325, 155, 340, 250, 345, 240,];
-  const military_statistics_data2 = [310, 325, 155, 340, 110, 345, 240, 135, 325, 155, 340, 250,];
+  const chart = echarts.init(
+    document.querySelector(".chart-industrial-value-added") as HTMLElement,
+  );
+  const military_statistics_data1 = [
+    220, 100, 250, 145, 240, 130, 325, 155, 340, 250, 345, 240,
+  ];
+  const military_statistics_data2 = [
+    310, 325, 155, 340, 110, 345, 240, 135, 325, 155, 340, 250,
+  ];
   // const military_statistics_data3 = [345, 240, 135, 325, 155, 340, 250, 345, 240, 135, 325, 155];
   var fontColor = "#D8DBDF";
   var option = {
@@ -150,7 +150,7 @@ export function industrialValueAdded() {
       itemGap: 50,
       textStyle: {
         color: "#D8DBDF",
-        fontSize: 22
+        fontSize: 22,
       },
       data: ["能耗", "电耗"],
     },
@@ -160,7 +160,7 @@ export function industrialValueAdded() {
         boundaryGap: false,
         axisLabel: {
           color: fontColor,
-          fontSize: 18
+          fontSize: 18,
         },
         axisLine: {
           show: true,
@@ -183,7 +183,7 @@ export function industrialValueAdded() {
           "2023-11",
           "2023-12",
           "2024-01",
-          "2024-02"
+          "2024-02",
         ],
       },
     ],
@@ -196,7 +196,7 @@ export function industrialValueAdded() {
           formatter: "{value}",
           textStyle: {
             color: fontColor,
-            fontSize: 18
+            fontSize: 18,
           },
         },
         axisLine: {
@@ -209,9 +209,9 @@ export function industrialValueAdded() {
         },
         splitLine: {
           lineStyle: {
-            color: '#384267',
+            color: "#384267",
             width: 1,
-            type: 'dashed',
+            type: "dashed",
           },
           show: true,
         },
@@ -287,7 +287,7 @@ export function industrialValueAdded() {
           },
         },
         data: military_statistics_data2,
-      }
+      },
     ],
   };
 
@@ -295,155 +295,116 @@ export function industrialValueAdded() {
 }
 
 export function energyPerUnitOutput() {
-  const chart = echarts.init(document.querySelector('.chart-energ-perUnit-output') as HTMLElement);
+  const chart = echarts.init(
+    document.querySelector(".chart-energ-perUnit-output") as HTMLElement,
+  );
   const option = {
-    "legend": {
-      "show": false
+    legend: {
+      show: false,
     },
-    "color": [
-      "#63caff",
-      "#49beff",
-    ],
-    "grid": {
-      "containLabel": true,
-      "left": 20,
-      "right": 20,
-      "bottom": 10,
-      "top": 40
+    color: ["#63caff", "#49beff"],
+    grid: {
+      containLabel: true,
+      left: 20,
+      right: 20,
+      bottom: 10,
+      top: 40,
     },
-    "xAxis": {
-      "axisLabel": {
-        "color": "#c0c3cd",
-        "fontSize": 18,
-        "interval": 0
+    xAxis: {
+      axisLabel: {
+        color: "#c0c3cd",
+        fontSize: 18,
+        interval: 0,
       },
-      "axisLine": {
-        "lineStyle": {
-          "color": "#384267",
-          "width": 1,
-          "type": "dashed"
+      axisLine: {
+        lineStyle: {
+          color: "#384267",
+          width: 1,
+          type: "dashed",
         },
-        "show": false
+        show: false,
       },
-      "data": [
-        "2023-09",
-        "2023-10",
-        "2023-11",
-        "2023-12",
-        "2024-01",
-        "2024-02"
-      ],
-      "type": "category"
+      data: ["2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02"],
+      type: "category",
     },
-    "yAxis": {
-      "axisLabel": {
-        "color": "#D8DBDF",
-        "fontSize": 18
+    yAxis: {
+      axisLabel: {
+        color: "#D8DBDF",
+        fontSize: 18,
       },
-      "splitLine": {
-        "show": true,
-        "lineStyle": {
-          "color": "#384267",
-          "type": "dashed"
-        }
+      splitLine: {
+        show: true,
+        lineStyle: {
+          color: "#384267",
+          type: "dashed",
+        },
       },
-      "axisLine": {
-        "show": false
+      axisLine: {
+        show: false,
       },
-      "name": ""
+      name: "",
     },
-    "series": [
+    series: [
       {
-        "data": [
-          200,
-          85,
-          112,
-          50,
-          305,
-          150
-        ],
-        "type": "bar",
-        "barMaxWidth": "auto",
-        "barWidth": 30,
-        "itemStyle": {
-          "color": {
-            "x": 0,
-            "y": 0,
-            "x2": 0,
-            "y2": 1,
-            "type": "linear",
-            "global": false,
-            "colorStops": [
+        data: [200, 85, 112, 50, 305, 150],
+        type: "bar",
+        barMaxWidth: "auto",
+        barWidth: 30,
+        itemStyle: {
+          color: {
+            x: 0,
+            y: 0,
+            x2: 0,
+            y2: 1,
+            type: "linear",
+            global: false,
+            colorStops: [
               {
-                "offset": 0,
-                "color": "#0b9eff"
+                offset: 0,
+                color: "#0b9eff",
               },
               {
-                "offset": 1,
-                "color": "#63caff"
-              }
-            ]
-          }
+                offset: 1,
+                color: "#63caff",
+              },
+            ],
+          },
         },
-        "label": {
-          "show": false,
-          "position": "top",
-          "distance": 10,
-          "color": "#fff"
-        }
+        label: {
+          show: false,
+          position: "top",
+          distance: 10,
+          color: "#fff",
+        },
       },
       {
-        "data": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ],
-        "type": "pictorialBar",
-        "barMaxWidth": "20",
-        "symbol": "diamond",
-        "symbolOffset": [
-          0,
-          "50%"
-        ],
-        "symbolSize": [
-          30,
-          15
-        ]
+        data: [1, 1, 1, 1, 1, 1, 1, 1],
+        type: "pictorialBar",
+        barMaxWidth: "20",
+        symbol: "diamond",
+        symbolOffset: [0, "50%"],
+        symbolSize: [30, 15],
       },
       {
-        "data": [
-          200,
-          85,
-          112,
-          50,
-          305,
-          150
-        ],
-        "type": "pictorialBar",
-        "barMaxWidth": "20",
-        "symbolPosition": "end",
-        "symbol": "diamond",
-        "symbolOffset": [
-          0,
-          "-50%"
-        ],
-        "symbolSize": [
-          30,
-          12
-        ],
-        "zlevel": 2
-      }
-    ]
-  }
+        data: [200, 85, 112, 50, 305, 150],
+        type: "pictorialBar",
+        barMaxWidth: "20",
+        symbolPosition: "end",
+        symbol: "diamond",
+        symbolOffset: [0, "-50%"],
+        symbolSize: [30, 12],
+        zlevel: 2,
+      },
+    ],
+  };
   chart.setOption(option);
 }
 
-export function energyProportion(selector: string, value: number, barColor: string) {
+export function energyProportion(
+  selector: string,
+  value: number,
+  barColor: string,
+) {
   const chart = echarts.init(document.querySelector(selector) as HTMLElement);
   const option = {
     // title: [{
@@ -459,61 +420,62 @@ export function energyProportion(selector: string, value: number, barColor: stri
     //     },
     // }],
     polar: {
-      radius: ['85%', '73%'],
-      center: ['50%', '50%'],
+      radius: ["85%", "73%"],
+      center: ["50%", "50%"],
     },
     angleAxis: {
       max: 100,
       show: false,
     },
     radiusAxis: {
-      type: 'category',
+      type: "category",
       show: true,
       axisLabel: {
         show: false,
       },
       axisLine: {
         show: false,
-
       },
       axisTick: {
-        show: false
+        show: false,
       },
     },
-    series: [{
-      name: '',
-      type: 'bar',
-      startAngle: 90,
-      roundCap: false,
-      barWidth: 60,
-      showBackground: true,
-      backgroundStyle: {
-        color: '#43607a75',
+    series: [
+      {
+        name: "",
+        type: "bar",
+        startAngle: 90,
+        roundCap: false,
+        barWidth: 60,
+        showBackground: true,
+        backgroundStyle: {
+          color: "#43607a75",
+        },
+        data: [value],
+        coordinateSystem: "polar",
+        itemStyle: {
+          normal: {
+            color: barColor,
+          },
+        },
       },
-      data: [value],
-      coordinateSystem: 'polar',
-      itemStyle: {
-        normal: {
-          color: barColor
-        }
-      }
-    }
-
-    ]
+    ],
   };
 
   chart.setOption(option);
 }
 
 export function energyTop10() {
-  const chart = echarts.init(document.querySelector('.energy-top10') as HTMLElement);
+  const chart = echarts.init(
+    document.querySelector(".energy-top10") as HTMLElement,
+  );
   var data = [
-    { "code": "aaa", "stock": "aaa", "fundPost": "21.987691" },
-    { "code": "bbb", "stock": "bbb", "fundPost": "20.377176" },
-    { "code": "ccc", "stock": "ccc", "fundPost": "19.127404" },
-    { "code": "ddd", "stock": "ddd", "fundPost": "18.40882" },
-    { "code": "eee", "stock": "eee", "fundPost": "17.980597" }
-  ]
+    { code: "aaa", stock: "aaa", fundPost: "21.987691" },
+    { code: "bbb", stock: "bbb", fundPost: "20.377176" },
+    { code: "ccc", stock: "ccc", fundPost: "19.127404" },
+    { code: "ddd", stock: "ddd", fundPost: "18.40882" },
+    { code: "eee", stock: "eee", fundPost: "17.980597" },
+  ];
   function contains(arr: any, dst: any) {
     var i = arr.length;
     while ((i -= 1)) {
@@ -524,24 +486,23 @@ export function energyTop10() {
     return false;
   }
 
-
   var attackSourcesColor = [
     new echarts.graphic.LinearGradient(0, 1, 1, 1, [
       { offset: 0, color: "#EB3B5A" },
-      { offset: 1, color: "#FE9C5A" }
+      { offset: 1, color: "#FE9C5A" },
     ]),
     new echarts.graphic.LinearGradient(0, 1, 1, 1, [
       { offset: 0, color: "#FA8231" },
-      { offset: 1, color: "#FFD14C" }
+      { offset: 1, color: "#FFD14C" },
     ]),
     new echarts.graphic.LinearGradient(0, 1, 1, 1, [
       { offset: 0, color: "#F7B731" },
-      { offset: 1, color: "#FFEE96" }
+      { offset: 1, color: "#FFEE96" },
     ]),
     new echarts.graphic.LinearGradient(0, 1, 1, 1, [
       { offset: 0, color: "#395CFE" },
-      { offset: 1, color: "#2EC7CF" }
-    ])
+      { offset: 1, color: "#2EC7CF" },
+    ]),
   ];
   var attackSourcesColor1 = [
     "#EB3B5A",
@@ -555,15 +516,15 @@ export function energyTop10() {
     "#F57474",
     "#1089E7",
     "#F57474",
-    "#F57474"
+    "#F57474",
   ];
   var attaData: any = [];
   var attaName: any = [];
-  var topName: any = []
+  var topName: any = [];
   data.forEach((it, index) => {
     attaData[index] = parseFloat(it.fundPost).toFixed(2);
     attaName[index] = it.stock;
-    topName[index] = `${it.code} ${it.stock}`
+    topName[index] = `${it.code} ${it.stock}`;
   });
   var salvProMax = []; //背景按最大值
   for (let i = 0; i < attaData.length; i++) {
@@ -573,11 +534,11 @@ export function energyTop10() {
     var sss: any = [];
     sData.forEach(function (item: any, i: any) {
       let itemStyle = {
-        color: i > 3 ? attackSourcesColor[3] : attackSourcesColor[i]
+        color: i > 3 ? attackSourcesColor[3] : attackSourcesColor[i],
       };
       sss.push({
         value: item,
-        itemStyle: itemStyle
+        itemStyle: itemStyle,
       });
     });
     return sss;
@@ -587,8 +548,8 @@ export function energyTop10() {
     tooltip: {
       show: false,
       textStyle: {
-        fontSize: 18
-      }
+        fontSize: 18,
+      },
     },
     color: ["#F7B731"],
     legend: {
@@ -597,11 +558,11 @@ export function energyTop10() {
       itemHeight: 10,
       textStyle: {
         fontSize: 22,
-        color: "#fff"
+        color: "#fff",
       },
       show: false,
       selectedMode: false,
-      data: ["个人所得(亿元)"]
+      data: ["个人所得(亿元)"],
     },
     grid: {
       left: 0,
@@ -609,45 +570,45 @@ export function energyTop10() {
       width: "80%",
       bottom: "2%",
       top: 0,
-      containLabel: true
+      containLabel: true,
     },
     xAxis: {
       type: "value",
 
       splitLine: {
-        show: false
+        show: false,
       },
       axisLabel: {
-        show: false
+        show: false,
       },
       axisTick: {
-        show: false
+        show: false,
       },
       axisLine: {
-        show: false
-      }
+        show: false,
+      },
     },
     yAxis: [
       {
         type: "category",
         inverse: true,
         axisLine: {
-          show: false
+          show: false,
         },
         axisTick: {
-          show: false
+          show: false,
         },
         axisPointer: {
           label: {
             show: true,
-          }
+          },
         },
         pdaaing: [5, 0, 0, 0],
         postion: "left",
         data: attaName,
         axisLabel: {
-          show: false // 将排名的轴标签设置为不显示
-        }
+          show: false, // 将排名的轴标签设置为不显示
+        },
       },
       {
         type: "category",
@@ -659,21 +620,22 @@ export function energyTop10() {
         axisLabel: {
           textStyle: {
             color: "red",
-            fontSize: 18
-          }
+            fontSize: 18,
+          },
         },
-        data: attackSourcesDataFmt(attaName)
+        data: attackSourcesDataFmt(attaName),
       },
-      {//名称
-        type: 'category',
+      {
+        //名称
+        type: "category",
         offset: -10,
         position: "left",
         axisLine: {
-          show: false
+          show: false,
         },
         inverse: false,
         axisTick: {
-          show: false
+          show: false,
         },
         axisLabel: {
           interval: 0,
@@ -681,9 +643,9 @@ export function energyTop10() {
           align: "left",
           verticalAlign: "bottom",
           lineHeight: 40,
-          fontSize: 18
+          fontSize: 18,
         },
-        data: topName
+        data: topName,
       },
     ],
     series: [
@@ -697,16 +659,16 @@ export function energyTop10() {
         align: "center",
         itemStyle: {
           normal: {
-            barBorderRadius: 0
-          }
+            barBorderRadius: 0,
+          },
         },
         label: {
           show: false,
           fontSize: 18,
           color: "#fff",
           textBorderWidth: 2,
-          padding: [2, 0, 0, 0]
-        }
+          padding: [2, 0, 0, 0],
+        },
       },
       {
         name: "个人所得(亿元)",
@@ -717,18 +679,17 @@ export function energyTop10() {
         data: salvProMax,
         textStyle: {
           fontSize: 18,
-          color: "#fff"
+          color: "#fff",
         },
         itemStyle: {
           normal: {
             color: "#05325F",
             fontSize: 18,
-            barBorderRadius: 0
+            barBorderRadius: 0,
           },
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
   chart.setOption(option);
 }
-

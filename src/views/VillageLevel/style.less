@@ -13,7 +13,7 @@
       font-size: 20px;
       font-family: Microsoft YaHei;
       font-weight: 400;
-      color: #FFFFFF;
+      color: #ffffff;
       line-height: 31px;
       height: 30%;
     }
@@ -28,7 +28,7 @@
         font-size: 17px;
         font-family: Microsoft YaHei;
         font-weight: 400;
-        color: #91CCFF;
+        color: #91ccff;
         padding-right: 10px;
 
         &:not(:first-child) {
@@ -54,7 +54,7 @@
     }
 
     .green-fangkong {
-      color: #91CCFF;
+      color: #91ccff;
       font-weight: 400;
 
       .gf-icon {
@@ -103,19 +103,23 @@
 
       .doudou-col-5 {
         height: 45px;
-        background: linear-gradient(1deg, rgba(33, 144, 247, 0.26) -7px, #ffffff00);
+        background: linear-gradient(
+          1deg,
+          rgba(33, 144, 247, 0.26) -7px,
+          #ffffff00
+        );
         border-radius: 5px;
         margin-top: 10px;
         font-size: 17px;
         font-family: Microsoft YaHei;
         font-weight: 400;
-        color: #FFFFFF;
+        color: #ffffff;
         display: flex;
         align-items: center;
         justify-content: center;
 
         span {
-          color: #0078FF;
+          color: #0078ff;
           font-size: 26px;
           font-family: longzhoufeng;
           margin: 0 10px;
@@ -135,12 +139,12 @@
       height: 100%;
       display: flex;
       padding: 20px 0;
-      .ea-img{
+      .ea-img {
         position: relative;
         width: 45%;
         height: 85%;
         transform: translateX(64px);
-        img{
+        img {
           position: absolute;
           &.ea-img1 {
             width: 100%;
@@ -184,7 +188,6 @@
             animation-delay: 0;
             animation-duration: 2s;
             transform: translateX(90px);
-            
           }
           &.ea-img5 {
             width: 100%;
@@ -192,7 +195,7 @@
           }
         }
       }
-      .ea-value{
+      .ea-value {
         position: relative;
         width: 65%;
         height: 100%;
@@ -202,28 +205,28 @@
         flex-direction: column;
         justify-content: center;
         font-family: neirong;
-        .eav-item{
+        .eav-item {
           display: flex;
           flex-direction: column;
           color: #fff;
-          background-image: url('@/assets/village-level/qingyang/arr-bj.png');
+          background-image: url("@/assets/village-level/qingyang/arr-bj.png");
           background-size: 200px 100px;
           background-repeat: no-repeat;
           position: relative;
-          &::before{
-            content: '';
+          &::before {
+            content: "";
             position: absolute;
             top: -5px;
             left: -40px;
             width: 40px;
             height: 40px;
-            background-image: url('@/assets/village-level/qingyang/arr.png');
+            background-image: url("@/assets/village-level/qingyang/arr.png");
             background-size: cover;
           }
-          .eavi-title{
+          .eavi-title {
             font-size: 26px;
           }
-          .eavi-value{
+          .eavi-value {
             font-size: 49px;
             margin-top: 10px;
             display: inline-block;
@@ -234,22 +237,34 @@
             margin-top: 64px;
           }
           &:nth-child(1) {
-            .eavi-value{
-              background-image: linear-gradient(to right, #1D80E0, #fff); /* 渐变背景图片 */
+            .eavi-value {
+              background-image: linear-gradient(
+                to right,
+                #1d80e0,
+                #fff
+              ); /* 渐变背景图片 */
               -webkit-background-clip: text; /* 使用文本作为背景剪裁区域 */
               color: transparent; /* 设置文字颜色为透明 */
             }
           }
           &:nth-child(2) {
-            .eavi-value{
-              background-image: linear-gradient(to right, #71F7AA, #fff); /* 渐变背景图片 */
+            .eavi-value {
+              background-image: linear-gradient(
+                to right,
+                #71f7aa,
+                #fff
+              ); /* 渐变背景图片 */
               -webkit-background-clip: text; /* 使用文本作为背景剪裁区域 */
               color: transparent; /* 设置文字颜色为透明 */
             }
           }
           &:nth-child(3) {
-            .eavi-value{
-              background-image: linear-gradient(to right, #D0FC66, #fff); /* 渐变背景图片 */
+            .eavi-value {
+              background-image: linear-gradient(
+                to right,
+                #d0fc66,
+                #fff
+              ); /* 渐变背景图片 */
               -webkit-background-clip: text; /* 使用文本作为背景剪裁区域 */
               color: transparent; /* 设置文字颜色为透明 */
             }
@@ -262,34 +277,32 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      .ep-item{
+      .ep-item {
         width: 162px;
         height: 162px;
-        background-image: url('@/assets/village-level/qingyang/circle-bj.png');
+        background-image: url("@/assets/village-level/qingyang/circle-bj.png");
         background-size: 100% 82%;
         background-repeat: no-repeat;
         position: relative;
-        .epi-proportion{
+        .epi-proportion {
           position: absolute;
           top: 50%;
           left: 50%;
           font-size: 40px;
           transform: translate(-50%, -50%);
         }
-        .epi-title{
+        .epi-title {
           position: absolute;
           left: 50%;
           bottom: -40px;
           font-size: 28px;
           transform: translateX(-50%);
         }
-        .ep-item_3{
+        .ep-item_3 {
           transform: rotate(90deg);
         }
       }
     }
-
-    
   }
 }
 

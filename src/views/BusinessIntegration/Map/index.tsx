@@ -15,7 +15,7 @@ export default defineComponent({
     const getImageUrl = (name: string) => {
       return new URL(
         `../../../assets/business-integration/${name}`,
-        import.meta.url
+        import.meta.url,
       ).href;
     };
     const state = reactive<State>({});

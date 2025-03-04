@@ -1,8 +1,7 @@
-
-import * as THREE from 'three/build/three.module.js';
-import ThreeBase from './ThreeBase.js';
-export { default as getRandLetterNum } from './rand.js';
-import { getCanvasText, getTextMesh } from './util.js';
+import * as THREE from "three/build/three.module.js";
+import ThreeBase from "./ThreeBase.js";
+export { default as getRandLetterNum } from "./rand.js";
+import { getCanvasText, getTextMesh } from "./util.js";
 export class WordCloud extends ThreeBase {
   constructor() {
     super();
@@ -38,7 +37,7 @@ export class WordCloud extends ThreeBase {
     this.that = that;
     const l = that.data.length;
     const material = new THREE.MeshBasicMaterial({
-      color: that.color
+      color: that.color,
     });
     let max = Number.MIN_SAFE_INTEGER;
     let min = Number.MAX_SAFE_INTEGER;
@@ -65,7 +64,9 @@ export class WordCloud extends ThreeBase {
           Math.random() * 255
         })`;
         const vector = new THREE.Vector3();
-        const phi = Math.acos(THREE.MathUtils.lerp(-1, 1, idx / (that.data.length - 1)));
+        const phi = Math.acos(
+          THREE.MathUtils.lerp(-1, 1, idx / (that.data.length - 1)),
+        );
 
         const theta = Math.sqrt(that.data.length * Math.PI) * phi;
 
@@ -74,12 +75,12 @@ export class WordCloud extends ThreeBase {
         let s = THREE.MathUtils.lerp(
           that.minFontSize,
           that.maxFontSize,
-          (item.value - min) / size
+          (item.value - min) / size,
         );
 
         let { mesh, geometry } = getTextMesh(THREE, text, s, color);
 
-        mesh.name = 'text' + idx;
+        mesh.name = "text" + idx;
         mesh.position.set(vector.x, vector.y, vector.z);
 
         geometry.lookAt(vector);
@@ -95,23 +96,23 @@ export class WordCloud extends ThreeBase {
         transparent: true,
         opacity: 0.2,
 
-        wireframe: true
+        wireframe: true,
       });
       const mm = new THREE.Mesh(g, m);
       this.objGroup.add(mm);
     }
-    this.scene.fog = new THREE.FogExp2(new THREE.Color('#00000000'), 0.0035);
+    this.scene.fog = new THREE.FogExp2(new THREE.Color("#00000000"), 0.0035);
     this.setView(
       {
         x: 126.17633606807345,
         y: 126.17633606807341,
-        z: 126.17633606807348
+        z: 126.17633606807348,
       },
       {
         x: 0,
         y: 0,
-        z: 0
-      }
+        z: 0,
+      },
     );
   }
 }

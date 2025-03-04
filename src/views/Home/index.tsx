@@ -38,7 +38,7 @@ export default defineComponent(() => {
        * sync: 同步触发，低效
        */
       flush: "post",
-    }
+    },
   );
 
   /**
@@ -116,7 +116,7 @@ export default defineComponent(() => {
             <span class="date">{state.date}</span>
 
             <div class="weather">
-              台湾   台北   19℃
+              台湾 台北 19℃
               <img src={getImageUrl("taiyang.png")} alt="" />
             </div>
           </div>

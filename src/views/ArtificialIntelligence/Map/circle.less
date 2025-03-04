@@ -1,26 +1,26 @@
-.aic-animation-imgs{
+.aic-animation-imgs {
   .circle {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     position: absolute;
-    .circle-img-pop{
+    .circle-img-pop {
       width: 100%;
       height: 100%;
     }
-    .circle-img-bg{
+    .circle-img-bg {
       width: 80%;
       height: 80%;
       position: absolute;
       top: -34px;
       left: 31px;
     }
-    .circle-img-content_icon{
+    .circle-img-content_icon {
       position: absolute;
       top: 32px;
       left: 101px;
     }
-    .circle-text{
+    .circle-text {
       position: absolute;
       top: 40px;
       left: 111px;
@@ -30,7 +30,7 @@
       font-size: 35px;
       color: #fff;
     }
-    .circle-text-main{
+    .circle-text-main {
       position: absolute;
       top: 100%;
       left: 50%;
@@ -42,29 +42,47 @@
       white-space: nowrap;
     }
   }
-    .circle1 {
-      animation: animX 12s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate, animY 12s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate, scale 24s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
-    }
-  
-    .circle2 {
-      animation: animX 12s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate, animY 12s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate, scale 24s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate;
-    }
-  
-    .circle3 {
-      animation: animX 12s cubic-bezier(0.36, 0, 0.64, 1) -14s infinite alternate, animY 12s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate, scale 24s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate;
-    }
-  
-    .circle4 {
-      animation: animX 12s cubic-bezier(0.36, 0, 0.64, 1) -18s infinite alternate, animY 12s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate, scale 24s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate;
-    }
-  
-    .circle5 {
-      animation: animX 12s cubic-bezier(0.36, 0, 0.64, 1) -22s infinite alternate, animY 12s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate, scale 24s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate;
-    }
-  
-    .circle6 {
-      animation: animX 12s cubic-bezier(0.36, 0, 0.64, 1) -26s infinite alternate, animY 12s cubic-bezier(0.36, 0, 0.64, 1) -20s infinite alternate, scale 24s cubic-bezier(0.36, 0, 0.64, 1) -20s infinite alternate;
-    }
+  .circle1 {
+    animation:
+      animX 12s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate,
+      animY 12s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate,
+      scale 24s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+  }
+
+  .circle2 {
+    animation:
+      animX 12s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate,
+      animY 12s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate,
+      scale 24s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate;
+  }
+
+  .circle3 {
+    animation:
+      animX 12s cubic-bezier(0.36, 0, 0.64, 1) -14s infinite alternate,
+      animY 12s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate,
+      scale 24s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate;
+  }
+
+  .circle4 {
+    animation:
+      animX 12s cubic-bezier(0.36, 0, 0.64, 1) -18s infinite alternate,
+      animY 12s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate,
+      scale 24s cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate;
+  }
+
+  .circle5 {
+    animation:
+      animX 12s cubic-bezier(0.36, 0, 0.64, 1) -22s infinite alternate,
+      animY 12s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate,
+      scale 24s cubic-bezier(0.36, 0, 0.64, 1) -16s infinite alternate;
+  }
+
+  .circle6 {
+    animation:
+      animX 12s cubic-bezier(0.36, 0, 0.64, 1) -26s infinite alternate,
+      animY 12s cubic-bezier(0.36, 0, 0.64, 1) -20s infinite alternate,
+      scale 24s cubic-bezier(0.36, 0, 0.64, 1) -20s infinite alternate;
+  }
   @keyframes animX {
     0% {
       left: -4%;
@@ -85,20 +103,19 @@
     }
   }
   @keyframes scale {
- 
-   0% {
-     transform: scale(0.5);
-     opacity: 0.5;
-   }
- 
-   50% {
-     transform: scale(1);
-     opacity: 1;
-   }
- 
-   100% {
-     transform: scale(0.5);
-     opacity: 0.5;
-   }
- }
+    0% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
 }

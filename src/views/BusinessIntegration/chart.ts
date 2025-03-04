@@ -3,7 +3,7 @@ import * as echarts from "echarts";
 export function energyProportion(
   selector: string,
   value: number,
-  barColor: string
+  barColor: string,
 ) {
   const chart = echarts.init(document.querySelector(selector) as HTMLElement);
   const option = {
@@ -895,7 +895,7 @@ export function wentiFn() {
 
 export function wlaqzelsFn() {
   const chart = echarts.init(
-    document.getElementById("chart-wlaqzels") as HTMLElement
+    document.getElementById("chart-wlaqzels") as HTMLElement,
   );
   const option = {
     legend: {

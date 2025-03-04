@@ -1,9 +1,9 @@
-import { defineComponent } from 'vue';
-import './index.css'
+import { defineComponent } from "vue";
+import "./index.css";
 
 interface Props {
-    label: string
-    num: number
+  label: string;
+  num: number;
 }
 
 // const EllipseItem = defineComponent(({ label, num }: Props) => {
@@ -17,12 +17,12 @@ interface Props {
 //     }
 // })
 const EllipseItem = ({ label, num }: Props) => {
-    return (
-        <div class='ellipse-item-container'>
-            <span>{num}</span>
-            <span>{label}</span>
-        </div>
-    )
-}
+  return (
+    <div class="ellipse-item-container">
+      <span>{num}</span>
+      <span>{label}</span>
+    </div>
+  );
+};
 
-export default EllipseItem
+export default EllipseItem;

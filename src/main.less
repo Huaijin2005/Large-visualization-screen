@@ -1,13 +1,13 @@
 @font-face {
   font-family: neirong; //自定义字体名称
-  src: url('./assets/font/D-DINExp.otf');
+  src: url("./assets/font/D-DINExp.otf");
 }
 @font-face {
   font-family: biaoti; //自定义字体名称
-  src: url('./assets/font/ysbt.ttf');
+  src: url("./assets/font/ysbt.ttf");
 }
 
-@import './styles/initialization.less';
+@import "./styles/initialization.less";
 
 :root {
   --doudou-white: #ffffff;
@@ -55,101 +55,101 @@ body,
   background-color: #000d20;
 }
 
-.text-indent{
+.text-indent {
   text-indent: 40px;
   display: inline-block;
 }
 
 // 父元素必须设置相对或者绝对定位
-.position-center{
+.position-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.doudou-row{
+.doudou-row {
   display: flex;
   justify-content: space-between;
 }
-.doudou-row-sa{
+.doudou-row-sa {
   display: flex;
   justify-content: space-around;
 }
-.doudou-col-1{
+.doudou-col-1 {
   width: 8.33333333%;
   height: 100%;
 }
-.doudou-col-2{
+.doudou-col-2 {
   width: 16.66666666%;
   height: 100%;
 }
-.doudou-col-3{
+.doudou-col-3 {
   width: 24.99999999%;
   height: 100%;
 }
-.doudou-col-4{
+.doudou-col-4 {
   width: 33.33333333%;
   height: 100%;
 }
-.doudou-col-5{
+.doudou-col-5 {
   width: 41.66666666%;
   height: 100%;
 }
-.doudou-col-6{
+.doudou-col-6 {
   width: 50%;
   height: 100%;
 }
-.doudou-col-7{
+.doudou-col-7 {
   width: 58.33333333%;
   height: 100%;
 }
-.doudou-col-8{
+.doudou-col-8 {
   width: 66.66666666%;
   height: 100%;
 }
-.doudou-col-9{
+.doudou-col-9 {
   width: 74.99999999%;
   height: 100%;
 }
-.doudou-col-10{
+.doudou-col-10 {
   width: 83.33333333%;
   height: 100%;
 }
-.doudou-col-11{
+.doudou-col-11 {
   width: 91.66666666%;
   height: 100%;
 }
-.doudou-col-12{
+.doudou-col-12 {
   width: 100%;
   height: 100%;
 }
 
-.common-subtitle{
+.common-subtitle {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 52px;
   padding: 0 100px;
   font-size: 26px;
-  background-image: url('@/assets/achievement-aggregation/icon-bj-4.png');
+  background-image: url("@/assets/achievement-aggregation/icon-bj-4.png");
   background-size: 100% 82%;
   background-repeat: no-repeat;
 }
 
-.doudou-tab-item{
-  background-image: url('@/assets/artificial-intelligence/weixuanzhong.png');
+.doudou-tab-item {
+  background-image: url("@/assets/artificial-intelligence/weixuanzhong.png");
   background-size: 90% 100%;
   background-repeat: no-repeat;
   background-position-x: 16px;
   height: 56px;
   font-size: 28px;
-  color: #0084FF;
+  color: #0084ff;
   text-align: center;
   line-height: 56px;
   cursor: pointer;
-  &.doudou-tab-item_active{
-    background-image: url('@/assets/artificial-intelligence/xuanzhong.png');
+  &.doudou-tab-item_active {
+    background-image: url("@/assets/artificial-intelligence/xuanzhong.png");
     color: #ffffff;
   }
 }

@@ -14,9 +14,13 @@ export default function getRandLetterNum(len) {
   let str = [];
 
   for (let i = 0; i < len; i++) {
-    str.push(LetterNum[Math.round(Math.random() * LetterNum.length) % LetterNum.length]);
+    str.push(
+      LetterNum[
+        Math.round(Math.random() * LetterNum.length) % LetterNum.length
+      ],
+    );
   }
-  let id = str.join('');
+  let id = str.join("");
   if (randIdMap[id]) {
     return getRandLetterNum(len);
   }

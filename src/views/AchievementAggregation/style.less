@@ -13,12 +13,12 @@
       font-size: 20px;
       font-family: Microsoft YaHei;
       font-weight: 400;
-      color: #FFFFFF;
+      color: #ffffff;
       line-height: 31px;
       height: 30%;
     }
 
-    .chart-shuzihua{
+    .chart-shuzihua {
       .dynamic-data-item {
         width: 230px;
         height: 342px;
@@ -31,42 +31,39 @@
         font-size: 40px;
         font-family: Microsoft YaHei;
         font-weight: 400;
-        color: #FFFFFF;
+        color: #ffffff;
         text-align: center;
         border-radius: 10px;
-        .ddi-title{
+        .ddi-title {
           font-size: 28px;
           transform: translateY(23px);
         }
-        .ddi-value{
+        .ddi-value {
           display: flex;
           font-size: 45px;
           display: inline-block;
           font-family: neirong;
-          .ddi-unit{
+          .ddi-unit {
             font-size: 25px;
-            color: #3FD0FF;
+            color: #3fd0ff;
             transform: translateY(22px);
           }
         }
       }
-
     }
-
-    
   }
 
-  .aa-left{
+  .aa-left {
     .shuzihualianluoren {
       height: 100%;
       display: flex;
       padding: 20px 0;
-      .aa-img{
+      .aa-img {
         position: relative;
         width: 45%;
         height: 85%;
         transform: translateX(64px);
-        img{
+        img {
           position: absolute;
           &.aa-img1 {
             bottom: 38%;
@@ -85,7 +82,7 @@
           }
         }
       }
-      .aa-value{
+      .aa-value {
         position: relative;
         width: 65%;
         height: 100%;
@@ -94,33 +91,33 @@
         flex-direction: column;
         justify-content: center;
         font-family: neirong;
-        .aav-item{
+        .aav-item {
           display: flex;
           flex-direction: row;
           color: #fff;
-          background-image: url('@/assets/achievement-aggregation/line.png');
+          background-image: url("@/assets/achievement-aggregation/line.png");
           background-size: 300px 3px;
           background-repeat: no-repeat;
           position: relative;
           align-items: center;
           background-position: -26px 48px;
-          &::before{
-            content: '';
+          &::before {
+            content: "";
             position: absolute;
             top: 10px;
             left: -36px;
             width: 30px;
             height: 30px;
-            background-image: url('@/assets/artificial-intelligence/arr.png');
+            background-image: url("@/assets/artificial-intelligence/arr.png");
             background-size: contain;
             background-repeat: no-repeat;
           }
-          .aavi-title{
+          .aavi-title {
             font-size: 28px;
             display: inline-block;
             width: 217px;
           }
-          .aavi-value{
+          .aavi-value {
             font-size: 32px;
             display: inline-block;
             height: 51px;
@@ -133,15 +130,15 @@
             margin-top: 34px;
           }
           &:nth-child(1) {
-            .aavi-value{
-              background: #1D80E0; /* 渐变背景图片 */
+            .aavi-value {
+              background: #1d80e0; /* 渐变背景图片 */
               -webkit-background-clip: text; /* 使用文本作为背景剪裁区域 */
               color: transparent; /* 设置文字颜色为透明 */
             }
           }
           &:nth-child(2) {
-            .aavi-value{
-              background: #3CFFDF; /* 渐变背景图片 */
+            .aavi-value {
+              background: #3cffdf; /* 渐变背景图片 */
               -webkit-background-clip: text; /* 使用文本作为背景剪裁区域 */
               color: transparent; /* 设置文字颜色为透明 */
             }
@@ -150,109 +147,113 @@
       }
     }
   }
-  .shuzihuanengli{
+  .shuzihuanengli {
     width: 1750px;
     height: 514px;
     position: absolute;
     left: 1053px;
     bottom: 102px;
-    .nc-card-title{
-      background-size: 48px 43px, 100% 65px;
+    .nc-card-title {
+      background-size:
+        48px 43px,
+        100% 65px;
       background-repeat: no-repeat;
-      background-position: 28px 12px, 28px 19px;
-      .nc-ct-span{
+      background-position:
+        28px 12px,
+        28px 19px;
+      .nc-ct-span {
         transform: translate(82px, 3px);
       }
     }
   }
 
   .aa-right {
-    .szhnlkapt-title{
+    .szhnlkapt-title {
       width: 437px;
       height: 52px;
       font-size: 26px;
-      background-image: url('@/assets/achievement-aggregation/icon-bj-4.png');
+      background-image: url("@/assets/achievement-aggregation/icon-bj-4.png");
       background-size: 100% 82%;
       background-repeat: no-repeat;
       text-align: center;
       transform: translateX(30%);
     }
-    .huodong-number{
+    .huodong-number {
       width: 230px;
-        height: 342px;
-        // background: linear-gradient(to bottom, #2190f78a, #2190f700);
-        // ;
+      height: 342px;
+      // background: linear-gradient(to bottom, #2190f78a, #2190f700);
+      // ;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #ffffff;
+      text-align: center;
+      border-radius: 10px;
+      .ddi-imgs {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        transform: translate(58px, -56px);
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 80%;
+          height: 80%;
+          transform: translate(-66%, -43%);
+        }
+      }
+      .ddi-title {
+        font-size: 28px;
+      }
+      .ddi-value {
         display: flex;
-        flex-direction: column;
-        justify-items: center;
-        justify-content: center;
-        font-size: 40px;
-        font-family: Microsoft YaHei;
-        font-weight: 400;
-        color: #FFFFFF;
-        text-align: center;
-        border-radius: 10px;
-        .ddi-imgs{
-          position: relative;
-          width: 100px;
-          height: 100px;
-          transform: translate(58px, -56px);
-          img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 80%;
-            height: 80%;
-            transform: translate(-66%, -43%);
-          }
+        font-size: 45px;
+        display: inline-block;
+        font-family: neirong;
+        transform: translateY(23px);
+        .ddi-unit {
+          font-size: 25px;
+          color: #3fd0ff;
+          transform: translateY(22px);
         }
-        .ddi-title{
-          font-size: 28px;
-        }
-        .ddi-value{
-          display: flex;
-          font-size: 45px;
-          display: inline-block;
-          font-family: neirong;
-          transform: translateY(23px);
-          .ddi-unit{
-            font-size: 25px;
-            color: #3FD0FF;
-            transform: translateY(22px);
-          }
-        }
+      }
     }
-    .chart-fhsjcpsl-gb{
+    .chart-fhsjcpsl-gb {
       top: 43px;
-    left: 32px;
-    z-index: 0;
-    width: 290px;
-    height: 290px;
-    background-color: #486cc724;
-    border-radius: 50%;
-    border: 2px solid #486cc77a;
-    position: absolute;
+      left: 32px;
+      z-index: 0;
+      width: 290px;
+      height: 290px;
+      background-color: #486cc724;
+      border-radius: 50%;
+      border: 2px solid #486cc77a;
+      position: absolute;
     }
-    .chart-fhsjcpsl-fugai{
+    .chart-fhsjcpsl-fugai {
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
       z-index: 1;
       position: absolute;
-      background-image: url('@/assets/achievement-aggregation/circle-1.png');
+      background-image: url("@/assets/achievement-aggregation/circle-1.png");
       background-size: 65px 70px;
       background-repeat: no-repeat;
       background-position: 160px 160px;
     }
-    .chart-fhsjcpsl-legend{
+    .chart-fhsjcpsl-legend {
       width: 100%;
       height: 100%;
       top: 35px;
       left: 532px;
       z-index: 1;
       position: absolute;
-      .cfl-item{
+      .cfl-item {
         color: #fff;
         font-size: 28px;
         width: 200px;
@@ -260,18 +261,18 @@
         display: flex;
         align-items: center;
         margin-bottom: 16px;
-        span{
+        span {
           display: inline-block;
         }
-        .cfli-dot{
+        .cfli-dot {
           width: 16px;
           height: 16px;
           margin-right: 20px;
         }
-        .cfli-name{
+        .cfli-name {
           width: 1500px;
         }
-        .cfli-value{
+        .cfli-value {
           text-align: start;
         }
       }

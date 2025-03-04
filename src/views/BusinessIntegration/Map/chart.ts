@@ -2,7 +2,7 @@ import * as echarts from "echarts";
 
 export function shebeishuFn() {
   const chart = echarts.init(
-    document.getElementById("shebeishu") as HTMLElement
+    document.getElementById("shebeishu") as HTMLElement,
   );
   let newData = {
     xAxis: ["西峰", "庆城", "环县", "华池", "合水", "正宁", "宁县", "镇原"],
@@ -91,7 +91,7 @@ export function shebeishuFn() {
 
 export function gongdanshuFn() {
   const chart = echarts.init(
-    document.getElementById("gongdanshu") as HTMLElement
+    document.getElementById("gongdanshu") as HTMLElement,
   );
   let newData = {
     xAxis: ["西峰", "庆城", "环县", "华池", "合水", "正宁", "宁县", "镇原"],
